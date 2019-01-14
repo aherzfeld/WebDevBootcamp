@@ -1,0 +1,45 @@
+/*border color: #bdc3c7
+date color: #3498db
+h2 color: #2d3e50
+
+font: source sans pro*/
+
+/*add thick grey border around the outside*/
+body {
+    border: 20px solid #bdc3c7;
+    padding: 20px;
+    max-width: 700px;
+    /*will use max-width until it can't anymore (then % takes over)*/
+    width: 80%;
+    margin: 20px auto;
+    font-family: Source Sans Pro;
+}
+
+/*Make dates blue, space between letters, all caps*/
+.date {
+    color: #3498db;
+    text-transform: uppercase;
+    /*extra font spacing relative to root element font size*/
+    letter-spacing: .2rem;
+}
+
+.post {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2d3e50;
+    font-size: 2.0rem;
+}
+
+/*add left border to first paragraphs, make it gray*/
+.quote {
+    border-left: 5px solid #bdc3c7;
+    padding-left: 5px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}

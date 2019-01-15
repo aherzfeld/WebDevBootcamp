@@ -1,5 +1,6 @@
 body {
     background: url(https://images.unsplash.com/photo-1415369629372-26f2fe60c467);
+    /*Shrinks image as much as possible while still covering background*/
     background-size: cover;
     background-position: center; 
 }
@@ -7,8 +8,10 @@ body {
 body,
 html {
     width: 100%;
+    /*This ensures the background image doesn't stop short*/
     height: 100%;
     font-family: "Lato";
+    /*Makes all font white, but buttons and navbar are more specific and thus override*/
     color: white;
 }
 
@@ -19,8 +22,10 @@ h1 {
 
 
 .content{
-	padding-top: 25%;
+	/*This centers it vertically on PC , but goes up for mobile*/
+    padding-top: 25%;
 	text-align: center;
+    /*x-offset, y-offset, blue-radius, color*/
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
                  0px 8px 13px rgba(0,0,0,0.1),
                  0px 18px 23px rgba(0,0,0,0.1);
@@ -29,5 +34,6 @@ h1 {
 hr {
     width: 400px;
     border-top: 1px solid #f8f8f8;
+    /*Adds a very subtle grey shadow*/
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
